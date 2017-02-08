@@ -1,2 +1,3 @@
 Hämtar Alpine linux och börjar med att göra mig bekant med detta system.
 gogglar för att verfiera hur jag installerar docker på denna linux dist: hittar följande: http://wiki.alpinelinux.org/wiki/Docker
+Jag väljer att installera operativsystemet till disk så att jag vet att systemt spara till disk. utgår ifrån https://wiki.alpinelinux.org/wiki/Installation . Följer guiden till standrad väljer lägget sys så att den blir ett traditionelt disk baserat os 
