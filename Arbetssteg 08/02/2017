@@ -3,3 +3,4 @@ gogglar för att verfiera hur jag installerar docker på denna linux dist: hitta
 Jag väljer att installera operativsystemet till disk så att jag vet att systemt spara till disk. utgår ifrån https://wiki.alpinelinux.org/wiki/Installation . Följer guiden till standrad väljer lägget sys så att den blir ett traditionelt disk baserat os 
 Påbörjar att installera docker ifrån den länken som jag nämner tidigare. Dock så ligger källan med i repostories filen så jag väljer att utkommentera alla dem som ligger med här. Sedan följer jag guiden på deras wiki för att installera docker. Gör en uppdatering av paket listorna genom att köra apk update. 
 Utgår ifrån denna sida http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management#Update_the_Package_list för hur jag ska hantera denna pakethanterar då den är ny för mig.
+Installera text editeraren nano då jag är mer van vid den
