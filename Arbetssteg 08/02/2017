@@ -3,4 +3,12 @@ gogglar för att verfiera hur jag installerar docker på denna linux dist: hitta
 Jag väljer att installera operativsystemet till disk så att jag vet att systemt spara till disk. utgår ifrån https://wiki.alpinelinux.org/wiki/Installation . Följer guiden till standrad väljer lägget sys så att den blir ett traditionelt disk baserat os 
 Påbörjar att installera docker ifrån den länken som jag nämner tidigare. Dock så ligger källan med i repostories filen så jag väljer att utkommentera alla dem som ligger med här. Sedan följer jag guiden på deras wiki för att installera docker. Gör en uppdatering av paket listorna genom att köra apk update. 
 Utgår ifrån denna sida http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management#Update_the_Package_list för hur jag ska hantera denna pakethanterar då den är ny för mig.
-Installera text editeraren nano då jag är mer van vid den
+Installera text editeraren nano då jag är mer van vid den och tycker att vi som följer med som standard är svår jobbad.
+
+Börjar att titta efter docker project som jag kan använda mig för att uppnå vad som efterfrågas. 
+För wordpress så väljer jag att använda: https://hub.docker.com/_/wordpress/ då vad jag kan utläsa så är det den officela versionen av detta 
+För mysql så väljer jag att använda: https://hub.docker.com/_/mysql/ då vad jag kan utläsa så är det den officela versionen av detta
+För nginx så väljer jag att användahttps://hub.docker.com/_/nginx/ då vad jag kan utläsa så är det den officela versionen av detta
+Sedan angånge PHP-FPM så får jag göra efterforskningar om jag behöver har en docker klient till den då enligt vissa kommentarer som jag har läst på nätet så ingår det i Wordpressen dockern
+
+Sedan så finns det alternativ docker klienter så denna https://hub.docker.com/r/raulr/nginx-wordpress/ som har allt detta inbackat men då har problemet att man kan få tag i program som är äldre och på detta sätt inte har de senaste patchar och orsakar säkret problem. Så jag väljer att inte använda detta.
