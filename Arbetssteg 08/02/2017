@@ -18,7 +18,7 @@ Har påbörjat att skapa docker compose.yml filen. Har dock problemen med att f�
 
 har utgått ifrån dessa länkar:https://www.upcloud.com/support/deploy-wordpress-with-docker-compose/  https://hub.docker.com/r/raulr/nginx-wordpress/
 men då jag inte fick detta funka så sedan jämför jag min fil med den som docker erbjuder i deras online hjälp genomför vissa änndringar men har fortfarande problem. 
-Efter att fixat filen så får jag nu problemet 
+Efter att fixat filen med hjälp av online verktyg för att formatera yml filer.(använt denna http://codebeautify.org/yaml-validator plus google för att lösa de felkoder som den ger mig) så får jag nu problemet 
 The Compose file './docker-compose.yml' is invalid because:
 services.wordpress.volumes contains an invalid type, it should be an array
 services.wordpress.links contains an invalid type, it should be an array
