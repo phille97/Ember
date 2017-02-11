@@ -12,3 +12,14 @@ För nginx så väljer jag att användahttps://hub.docker.com/_/nginx/ då vad j
 Sedan angånge PHP-FPM så får jag göra efterforskningar om jag behöver har en docker klient till den då enligt vissa kommentarer som jag har läst på nätet så ingår det i Wordpressen dockern
 
 Sedan så finns det alternativ docker klienter så denna https://hub.docker.com/r/raulr/nginx-wordpress/ som har allt detta inbackat men då har problemet att man kan få tag i program som är äldre och på detta sätt inte har de senaste patchar och orsakar säkret problem. Så jag väljer att inte använda detta.
+
+Har påbörjat att skapa docker compose.yml filen. Har dock problemen med att få formateringen rätt. När jag testar att köra filen så får jag felmedellandet 
+"error: yaml.scanner.ScannerError: while scanning for the next token for the next token found chracther '\t' that cannot start any token
+
+har utgått ifrån dessa länkar:https://www.upcloud.com/support/deploy-wordpress-with-docker-compose/  https://hub.docker.com/r/raulr/nginx-wordpress/
+men då jag inte fick detta funka så sedan jämför jag min fil med den som docker erbjuder i deras online hjälp genomför vissa änndringar men har fortfarande problem. 
+Efter att fixat filen så får jag nu problemet 
+The Compose file './docker-compose.yml' is invalid because:
+services.wordpress.volumes contains an invalid type, it should be an array
+services.wordpress.links contains an invalid type, it should be an array
+Unsupported config option for services.wordpress: 'nginx'  
