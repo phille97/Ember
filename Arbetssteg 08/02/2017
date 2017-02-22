@@ -23,3 +23,8 @@ The Compose file './docker-compose.yml' is invalid because:
 services.wordpress.volumes contains an invalid type, it should be an array
 services.wordpress.links contains an invalid type, it should be an array
 Unsupported config option for services.wordpress: 'nginx'  
+Tog kontakt med Ember och fråga om hjälp med att lösa problemt. De svarade att problemet berrode på felformatering av yml filen.
+Använder mig av google för att försöka hitta en fil som jag kan använda som bas. Hittar följande: https://github.com/jharrington22/nginx-php-wordpress-mysql-docker/blob/master/docker-compose.yml
+Använder denna som bas när jag skapar min docker-compose.yml fil:
+
+
