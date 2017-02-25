@@ -33,25 +33,6 @@ Min php.ini fil:
 log_errors=On 
 
 min site.conf:
-
-server {
-    listen 0.0.0.0:80;
-
-    root /var/www/html;
-
-    location / {
-        index index.php index.html;
-    }
-
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass php:9000;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
-    }
-}
-
-
    
 Har dock problem när jag försöker att besöka wordpress hemsidan och jag kan komma två steg in uppsättningen av wordpress filen. Sedan får jag problem. Tittar i loggen som ges när jag startar docker contaniarnea och det är massa fel med att den inte hittar filerna.
 
