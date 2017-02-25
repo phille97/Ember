@@ -27,11 +27,17 @@ Tog kontakt med Ember och fråga om hjälp med att lösa problemt. De svarade at
 Använder mig av google för att försöka hitta en fil som jag kan använda som bas. Hittar följande: https://github.com/jharrington22/nginx-php-wordpress-mysql-docker/blob/master/docker-compose.yml
 http://geekyplatypus.com/making-your-dockerised-php-application-even-better/
 Använder denna som bas när jag skapar min docker-compose.yml fil:
-
-      
+Se docker-compose.yml.version1
 Min php.ini fil:  
-
+Se php.ini.version1
 min site.conf:
-   
+Se site.conf.version1
 Har dock problem när jag försöker att besöka wordpress hemsidan och jag kan komma två steg in uppsättningen av wordpress filen. Sedan får jag problem. Tittar i loggen som ges när jag startar docker contaniarnea och det är massa fel med att den inte hittar filerna.
+
+Vänder mig till internet för att få hjälp med att lösa mina problem. Får tipset att utgå ifrån en redan existerande docker image och då utgår jag infrån den som jag nämmner här:  https://hub.docker.com/r/raulr/nginx-wordpress/ . Han nämmner även en sida hos Wordpress hjälp som tar upp hur man sätter upp nginx med wordpress använder mig även den för att gå vidare: https://codex.wordpress.org/Nginx .
+Efter att ha konsulterat dessa sidor så kommer jag till att jag måste genomföra vissa ändringar.
+När jag försöker att starta igång min konfig med php:fpm så får jag fortfarande problem med att jag inte kan surfa vidare i wordpress instalationen. Så för att försöka att komma runt detta så väljer jag den wordpress image som php:fpm är inkluderad i. Då slipper jag det problemet med att inte kunna surfa vidare i min wordpress instalation.
+Nu har jag dock problemet med att wordpress och mariadb inte synkas och ansluter till varanda automatiskt som är tanken ifrån wordpress sida.
+Detta löser jag via att manuelt specsa databas informationen.
+De filer som slutar med .final är dem som funkar och är de slutgiltiga.
 
