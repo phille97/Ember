@@ -29,8 +29,7 @@ http://geekyplatypus.com/making-your-dockerised-php-application-even-better/
 Använder denna som bas när jag skapar min docker-compose.yml fil:
 
       
-Min php.ini fil: 
-log_errors=On 
+Min php.ini fil:  
 
 min site.conf:
    
