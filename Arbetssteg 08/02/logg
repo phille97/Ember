@@ -33,6 +33,7 @@ Se php.ini.version1
 min site.conf:
 Se site.conf.version1
 Har dock problem när jag försöker att besöka wordpress hemsidan och jag kan komma två steg in uppsättningen av wordpress filen. Sedan får jag problem. Tittar i loggen som ges när jag startar docker contaniarnea och det är massa fel med att den inte hittar filerna.
+Efter att ha funderat över om jag ska prova att byta ut det separat php:fpm mot det intrigerad fpm i wordpress image så väljer jag att prova detta och kan konstera att även detta orsakar problem med min version 1. Så jag har uppdaterat mina filer för version 1 också
 
 Vänder mig till internet för att få hjälp med att lösa mina problem. Får tipset att utgå ifrån en redan existerande docker image och då utgår jag infrån den som jag nämmner här:  https://hub.docker.com/r/raulr/nginx-wordpress/ . Han nämmner även en sida hos Wordpress hjälp som tar upp hur man sätter upp nginx med wordpress använder mig även den för att gå vidare: https://codex.wordpress.org/Nginx .
 Efter att ha konsulterat dessa sidor så kommer jag till att jag måste genomföra vissa ändringar.
